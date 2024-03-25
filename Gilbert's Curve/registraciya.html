@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кривые Гилберта</title>
+    <link rel="stylesheet" href="registraciya.css">
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Имя пользователя" required>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Зарегистрироваться" onclick="login()">
+            <a href="avtorizaciya.html">Авторизация</a>
+        </form>
+        <script>
+            function login() {
+                window.location.href = 'avtorizaciya.html';
+            }
+        </script>
+</body>
+</html>
